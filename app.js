@@ -1,7 +1,7 @@
 
-const PRODUCTO1 = 1.000;
-const PRODUCTO2 = 1.500;
-const PRODUCTO3 = 2.000;
+const PRODUCTO1 = 1000;
+const PRODUCTO2 = 1500;
+const PRODUCTO3 = 2000;
 let cantidad;
 let total = 0;
 let opcion;
@@ -38,8 +38,8 @@ do{
         default:
             alert("Ingrese una opcion correcta");
     }
-    agregar = prompt("Deseas agregar mas productos al carrito?")
-} while (agregar == "si" )
+    agregar = prompt("Deseas agregar mas productos al carrito? Si \ No")
+} while (agregar.toLowerCase () !== "no" )
 
 
 alert ("El total a pagar es: $" + total)
