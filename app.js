@@ -1,3 +1,4 @@
+// Simulador Interactivo para la primer Pre Entrega
 
 const PRODUCTO1 = 1000;
 const PRODUCTO2 = 1500;
@@ -39,7 +40,7 @@ do{
             alert("Ingrese una opcion correcta");
     }
     agregar = prompt("Deseas agregar mas productos al carrito? Si \ No")
-} while (agregar.toLowerCase () !== "no" )
+} while (agregar.toLowerCase() !== "no" )
 
 
 alert ("El total a pagar es: $" + total)
