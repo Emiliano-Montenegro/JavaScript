@@ -21,16 +21,23 @@ function mostrarMenu() {
 
 alert('Bienvenido al carrito de compra de tu Barberia');
 
-do{
+do {
     opcion = mostrarMenu();
 
     while (!(opcion >= 1 && opcion <=3)) {
         alert("Ingrese una opción correcta")
         opcion = mostrarMenu()
     }
-
+    
+    let cantidadValida = false;
+    while (!cantidadValida) {
     cantidad = parseInt(prompt("Ingrese la cantidad que desea"));
-
+    if (isNaN(cantidad)) {
+        alert("Ingrese un número válido");
+    } else {
+    cantidadValida = true;
+    }
+    }
     switch (opcion) {
         case 1:
             total = calculo(total, PRODUCTO1, cantidad);
