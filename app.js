@@ -34,8 +34,10 @@ do {
     cantidad = parseInt(prompt("Ingrese la cantidad que desea"));
     if (isNaN(cantidad)) {
         alert("Ingrese un número válido");
+    } else if (cantidad < 0){
+        alert("Ingrese una cantidad positiva")
     } else {
-    cantidadValida = true;
+        cantidadValida = true;
     }
     }
     switch (opcion) {
